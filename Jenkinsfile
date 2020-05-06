@@ -10,7 +10,14 @@ pipeline {
 
 				}
 			}
-			
+			stage('Test') {
+				
+				steps {
+
+				 ctest 'InSearchPath'
+
+				}
+        }
 			
 		}
 
