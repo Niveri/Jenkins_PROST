@@ -24,9 +24,9 @@ auto substract = [](const auto first, const auto second) {
 
 auto initializer = [](const auto first, const auto second) ->std::map<std::string, std::function<int()>> {
 	return {
-		{"add", bind(add, first, second)},
-		{"multiply", bind(multiply, first, second)},
-		{"substract", bind(substract, first, second)}
+		{"add", std::bind(add, first, second)},
+		{"multiply", std::bind(multiply, first, second)},
+		{"substract", std:: bind(substract, first, second)}
 		
 	};
 
