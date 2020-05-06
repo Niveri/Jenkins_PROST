@@ -7,6 +7,7 @@ project (Jenkins_PROST)
 
 # Dodaj źródło do pliku wykonywalnego tego projektu.
 add_executable (Jenkins_PROST "Jenkins_PROST.cpp" "Jenkins_PROST.h" )
+target_compile_features(Jenkins_PROST PRIVATE cxx_std_17)
 include(CTest)
 add_subdirectory(Tests)
 
