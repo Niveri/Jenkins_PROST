@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 
 # Unit Tests
 # Add test cpp file
-add_executable( runUnitTests test.cpp ${CMAKE_SOURCE_DIR}/Jenkins_PROST.h ${CMAKE_SOURCE_DIR}/Jenkins_PROST.cpp)
+add_executable( runUnitTests test.cpp ${CMAKE_SOURCE_DIR}/Jenkins_PROST.h)
 
 # Catch2
 enable_testing()
