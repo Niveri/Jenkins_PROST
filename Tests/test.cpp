@@ -5,5 +5,5 @@
 TEST_CASE("Adds") {
 	auto calculator = initializer(1, 2);
 	int result = calculator["add"]();
-	CHECK(result, 3);
+	CHECK(result == 3);
 }
