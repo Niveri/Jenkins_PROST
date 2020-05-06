@@ -8,6 +8,7 @@ add_executable( runUnitTests test.cpp ${CMAKE_SOURCE_DIR}/Jenkins_PROST.h ${CMAK
 enable_testing()
 set(CATCH_INCLUDE_DIR)
 find_package(Catch2 CONFIG REQUIRED)
+target_compile_features(runUnitTests PRIVATE cxx_std_14)
 
 
 # Link test executable against gtest & gtest_main
