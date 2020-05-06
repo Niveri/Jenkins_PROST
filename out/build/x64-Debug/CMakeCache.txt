@@ -243,10 +243,10 @@ GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 HGCOMMAND:FILEPATH=HGCOMMAND-NOTFOUND
 
 //Value Computed by CMake
-Jenkins_PROST_BINARY_DIR:STATIC=C:/Users/emili/source/repos/Jenkins_PROST/out/build/x64-Debug/Tests
+Jenkins_PROST_BINARY_DIR:STATIC=C:/Users/emili/source/repos/Jenkins_PROST/out/build/x64-Debug
 
 //Value Computed by CMake
-Jenkins_PROST_SOURCE_DIR:STATIC=C:/Users/emili/source/repos/Jenkins_PROST/Tests
+Jenkins_PROST_SOURCE_DIR:STATIC=C:/Users/emili/source/repos/Jenkins_PROST
 
 //Command to build the project
 MAKECOMMAND:STRING="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
