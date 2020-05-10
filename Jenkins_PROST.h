@@ -12,7 +12,7 @@
 
 
 auto add = [](const auto first, const auto second) {
-	return first + second;
+	return first - second;
 };
 auto multiply = [](const auto first, const auto second) {
 	return first * second;
