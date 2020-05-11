@@ -32,7 +32,9 @@ pipeline {
             steps {
                 sh "echo"
                 // sh "build docker image here"
+                def Image = docker.build("prost:${env.BUILD_ID}")
                 // sh "publish docker image here"
+                Image.push()
             }
         }
     }

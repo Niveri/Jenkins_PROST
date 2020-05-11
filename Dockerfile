@@ -1,10 +1,10 @@
 # our local base image
-FROM jenkinsci/blueocean
+FROM niveri/prost-jenkins:first
 USER root
 
-LABEL description="Container for use with Visual Studio" 
+LABEL description="Container" 
 
-# install build dependencies 
-RUN apk add build-base gcc abuild binutils binutils-doc gcc-doc
+
+
 
 CMD ["cmake"]
