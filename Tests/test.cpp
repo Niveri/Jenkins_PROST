@@ -10,5 +10,5 @@ TEST_CASE("Adds") {
 TEST_CASE("Substracts") {
 	auto calculator = initializer(3, 1);
 	int result = calculator["substract"]();
-	CHECK(result == 1);
+	CHECK(result == 2);
 }
