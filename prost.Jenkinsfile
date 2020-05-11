@@ -33,7 +33,7 @@ pipeline {
                 sh "echo"
                 // sh "build docker image here"
                 
-                 sh 'docker.build "niveri/prost-jenkins" + ":$BUILD_NUMBER" .'
+                 sh 'docker build "niveri/prost-jenkins" + ":$BUILD_NUMBER" .'
                 
                 // sh "publish docker image here"
               
