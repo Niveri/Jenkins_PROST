@@ -32,9 +32,9 @@ pipeline {
             steps {
                 sh "echo"
                 // sh "build docker image here"
-                script {
-                    docker.build "niveri/prost-jenkins" + ":$BUILD_NUMBER"
-                }
+                
+                 sh 'docker.build "niveri/prost-jenkins" + ":$BUILD_NUMBER" .'
+                
                 // sh "publish docker image here"
               
             }
