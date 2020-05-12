@@ -1,4 +1,9 @@
 pipeline {
+    environment {
+        registry = "niveri/prost"
+        registryCredential = 'niveri'
+        dockerImage = ''
+  }
     agent any
 
     stages {
@@ -34,7 +39,8 @@ pipeline {
                 sh "echo"
                 // sh "build docker image here"
                 
-                 sh 'docker build -t "niveri/prost:$BUILD_NUMBER ." '
+               //  sh 'docker build -t "niveri/prost:$BUILD_NUMBER ." '
+
                 
                 // sh "publish docker image here"
               
