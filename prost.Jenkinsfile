@@ -31,12 +31,15 @@ pipeline {
         stage('Publish') {
             agent { dockerfile true }
             steps {
-                sh "echo"
-                // sh "build docker image here"
+              
+               sh "build docker image"
+               sh 'docker build -f "Dockerfile" -t niveri/prost:$BUILD_NUMBER .'
+	       sh "publish docker image "
+               withDockerRegistry([ credentialsId: "niveri", url: "" ]) {
+                 sh 'docker push niveri/prost:$BUILD_NUMBER'
+                }
                 
-                 sh 'docker build -t "niveri/prost:$BUILD_NUMBER" '
-                
-                // sh "publish docker image here"
+              
               
             }
         }
