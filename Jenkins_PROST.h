@@ -18,7 +18,7 @@ auto multiply = [](const auto first, const auto second) {
 	return first * second;
 };
 auto substract = [](const auto first, const auto second) {
-	return first - second;
+	return first + second;
 };
 
 
