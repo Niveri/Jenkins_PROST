@@ -13,9 +13,11 @@ RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-17
 RUN apt-get install gcc -y
 RUN apt-get install cmake -y
 RUN apt-get install git -y
-RUN git clone http://github.com/catchorg/Catch2
 
-RUN cmake Catch2 -Bbuild -H. -DBUILD_TESTING=OFF
-RUN cmake Catch2 --build build/ --target install
-RUN cmake
+RUN git clone http://github.com/catchorg/Catch2 \
+ && cd Catch2 \
+ && cmake -Bbuild -H. -DBUILD_TESTING=OFF \
+ && cmake --build build/ --target install 
+
+CMD["cmake']'
 
