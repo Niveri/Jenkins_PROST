@@ -3,7 +3,7 @@ FROM ubuntu:latest
 USER root
 
 # Install Docker in the image, which adds a docker group
-RUN apt-get update
+RUN apt-get -o Acquire::Check-Valid-Until=false update
  
 
 RUN apt-get install build-base gcc abuild binutils binutils-doc gcc-doc
