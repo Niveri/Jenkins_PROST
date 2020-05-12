@@ -39,7 +39,7 @@ pipeline {
                 sh "echo"
                 // sh "build docker image here"
                 
-               sh 'docker build -t "niveri/prost:$BUILD_NUMBER ." '
+               sh 'docker build -f "Dockerfile" -t niveri/prost:$BUILD_NUMBER .'
                withDockerRegistry([ credentialsId: "niveri", url: "" ]) {
                  sh 'docker push niveri/prost:latest'
                  
