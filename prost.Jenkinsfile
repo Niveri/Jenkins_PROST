@@ -41,7 +41,7 @@ pipeline {
                 
                sh 'docker build -f "Dockerfile" -t niveri/prost:$BUILD_NUMBER .'
                withDockerRegistry([ credentialsId: "niveri", url: "" ]) {
-                 sh 'docker push niveri/prost:latest'
+                 sh 'docker push niveri/prost:$BUILD_NUMBER'
                  
                 }
                 
