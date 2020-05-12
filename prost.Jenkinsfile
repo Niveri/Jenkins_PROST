@@ -29,9 +29,12 @@ pipeline {
         }
 
         stage('Publish') {
+            agent { dockerfile true }
             steps {
                 sh "echo"
                 // sh "build docker image here"
+                
+                 sh 'docker build -t "niveri/prost:$BUILD_NUMBER" '
                 
                 // sh "publish docker image here"
               

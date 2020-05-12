@@ -1,5 +1,5 @@
 # our local base image
-FROM niveri/prost-jenkins:first
+FROM ubuntu
 USER root
 
 LABEL description="Container" 
