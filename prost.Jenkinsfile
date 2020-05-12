@@ -31,13 +31,10 @@ pipeline {
         stage('Publish') {
            
             steps {
-              
-               sh "build docker image"
-               sh 'docker build -f "Dockerfile" -t niveri/prost:$BUILD_NUMBER .'
-	       sh "publish docker image "
-               withDockerRegistry([ credentialsId: "niveri", url: "" ]) {
-                 sh 'docker push niveri/prost:$BUILD_NUMBER'
-                }
+            	sh 'docker build -f "Dockerfile" -t niveri/prost:$BUILD_NUMBER .'
+	    	withDockerRegistry([ credentialsId: "niveri", url: "" ]) {
+                sh 'docker push niveri/prost:$BUILD_NUMBER'
+               }
                 
               
               
