@@ -4,7 +4,7 @@ USER root
 
 
 RUN apt-get update
-RUN apt-get install build-essential
+RUN apt-get install build-essential -y
 RUN apt-get upgrade
 RUN apt-get install curl -y
 RUN curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-17.03.0-ce.tgz \
