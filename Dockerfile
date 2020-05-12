@@ -3,8 +3,8 @@ FROM ubuntu
 USER root
 
 # Install Docker in the image, which adds a docker group
-RUN apt-get -y update 
-RUN apt-get -y install 
+RUN apt-get update 
+ 
 
 RUN apt-get install build-base gcc abuild binutils binutils-doc gcc-doc
 RUN apt-get install cmake
