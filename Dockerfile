@@ -12,5 +12,5 @@ RUN git clone http://github.com/catchorg/Catch2
 RUN cd catch2
 RUN cmake -Bbuild -H. -DBUILD_TESTING=OFF
 RUN cmake --build build/ --target install
-CMD["cmake"]
+RUN cmake
 
