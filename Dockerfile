@@ -14,7 +14,7 @@ RUN apt-get install gcc -y
 RUN apt-get install cmake -y
 RUN apt-get install git -y
 RUN git clone http://github.com/catchorg/Catch2
-RUN cd catch2
+RUN cd Catch2
 RUN cmake -Bbuild -H. -DBUILD_TESTING=OFF
 RUN cmake --build build/ --target install
 RUN cmake
