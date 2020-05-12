@@ -29,7 +29,7 @@ pipeline {
         }
 
         stage('Publish') {
-            agent { dockerfile true }
+           
             steps {
               
                sh "build docker image"
