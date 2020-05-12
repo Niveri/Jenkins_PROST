@@ -1,7 +1,7 @@
 # our local base image
 FROM ubuntu:latest
 USER root
-
+ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install build-essential -y
