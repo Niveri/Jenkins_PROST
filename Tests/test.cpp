@@ -7,8 +7,3 @@ TEST_CASE("Adds") {
 	int result = calculator["add"]();
 	CHECK(result == 3);
 }
-TEST_CASE("Substracts") {
-	auto calculator = initializer(3, 1);
-	int result = calculator["substract"]();
-	CHECK(result == 2);
-}
