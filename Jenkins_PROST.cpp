@@ -8,5 +8,6 @@
 int main()
 {
 	std::cout << "Hello CMake." << std::endl;
+	std::cout << "Bye!" << std::endl
 	return 0;
 }
